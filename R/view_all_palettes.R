@@ -1,0 +1,16 @@
+#' Prints all available colour palettes
+#'
+#' @return A plot of all colour palettes available in the package.
+#' @export
+
+view_all_palettes <- function() {
+
+  to_print <- RSSPalettes
+  n_all <- length(to_print)
+  n_col <- min(4, floor(sqrt(n_all)))
+  n_row <- ceiling(n_all / n_col)
+  par(mfrow = c(n_row, n_col))
+  purrr::map(.x = names(to_print), .f = ~print(RSScols(.x)))
+  par(mfrow = c(1, 1))
+
+}
