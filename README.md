@@ -1,3 +1,5 @@
+# DO NOT EDIT README.md by hand - only edit README.Rmd.
+
 R package to implement scale and theme functions for styling {ggplot2}
 graphics for RSS publications.
 
@@ -24,7 +26,7 @@ Let’s set up a basic data set.
       geom_col() +
       scale_fill_rss_d(palette = "Significance")
 
-![](README_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+![](README_files/figure-markdown_strict/fill-d-1.png)
 
 ### Discrete (colour) scale: `scale_colour_rss_d()`
 
@@ -33,7 +35,7 @@ Let’s set up a basic data set.
       geom_point(size = 4) +
       scale_colour_rss_d(palette = "Significance")
 
-![](README_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](README_files/figure-markdown_strict/col-d-1.png)
 
 ### Continuous (fill) scale: `scale_fill_rss_c()`
 
@@ -42,7 +44,7 @@ Let’s set up a basic data set.
       geom_col() +
       scale_fill_rss_c(palette = "Significance")
 
-![](README_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](README_files/figure-markdown_strict/fill-c-1.png)
 
 ### Continuous (colour) scale: `scale_colour_rss_c()`
 
@@ -51,7 +53,7 @@ Let’s set up a basic data set.
       geom_point(size = 4) +
       scale_colour_rss_c(palette = "Significance")
 
-![](README_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](README_files/figure-markdown_strict/col-c-1.png)
 
 # Theme functions
 
@@ -65,4 +67,4 @@ function:
       geom_col() +
       theme_significance()
 
-![](README_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](README_files/figure-markdown_strict/theme-sig-1.png)
