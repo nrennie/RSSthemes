@@ -1,11 +1,9 @@
 Package: RSSthemes
 Title: RSS palettes and themes
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Nicola",
-           family = "Rennie",
-           role = c("aut", "cre"),
-           email = "nrennie35@gmail.com")
+Authors@R: c(
+    person(given = "Nicola", family = "Rennie", role = c("aut", "cre"), email = "nrennie35@gmail.com"),
+    person("Royal Statistical Society", role = c("fnd"))
 Description: Defines colour palettes and themes for RSS publications.
 License: CC0
 Encoding: UTF-8
