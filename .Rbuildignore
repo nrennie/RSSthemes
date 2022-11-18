@@ -1,0 +1,7 @@
+^RSSthemes\.Rproj$
+^\.Rproj\.user$
+.lintr
+.github
+^\.github$
+^LICENSE\.md$
+README.Rmd
