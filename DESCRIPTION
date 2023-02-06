@@ -21,3 +21,4 @@ Suggests:
   markdown,
   rmarkdown,
   testthat (>= 3.0.0)
+License: MIT + file LICENSE

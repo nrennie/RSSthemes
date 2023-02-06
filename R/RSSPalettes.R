@@ -14,10 +14,8 @@ RSSPalettes <- list(
                       "#85A1C1", "#426FA0", "#003D80"),
                     "div",
                     FALSE),
-  signif_qual = list(c("#EE2E24", "#F1645D", "#F49A96",
-                       "#F7D1CF", "#FaFaFa", "#C8D4E1",
-                       "#85A1C1", "#426FA0", "#003D80"),
-                     "div",
+  signif_qual = list(c("#EE2E24", "#FaFaFa", "#003D80"),
+                     "qual",
                      FALSE)
   )
 
