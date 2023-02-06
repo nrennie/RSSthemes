@@ -8,7 +8,7 @@
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @return A character vector of hex colour codes.
 #' @examples
-#' RSScols("Significance")
+#' RSScols("signif_seq")
 #' @export
 
 RSScols <- function(palette,

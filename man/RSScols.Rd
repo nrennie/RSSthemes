@@ -24,5 +24,5 @@ A character vector of hex colour codes.
 Generates the colour palettes
 }
 \examples{
-RSScols("Significance")
+RSScols("signif_seq")
 }

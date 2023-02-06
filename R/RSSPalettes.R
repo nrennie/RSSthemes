@@ -16,7 +16,7 @@ RSSPalettes <- list(
                     FALSE),
   signif_qual = list(c("#EE2E24", "#FaFaFa", "#003D80"),
                      "qual",
-                     FALSE)
+                     TRUE)
   )
 
 #' Significance red hex colour
