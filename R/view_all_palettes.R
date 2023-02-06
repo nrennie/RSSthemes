@@ -13,9 +13,7 @@
 #' @export
 view_all_palettes <- function(type = "all",
                               colourblind_friendly = FALSE) {
-  
   `%notin%` <- Negate(`%in%`)
-  
   if (any(type %notin% c("all", "seq", "div", "qual"))) {
     stop("Invalid 'type'. Must be at least one of c('all', 'seq', 'div', 'qual').")
   } else {
@@ -49,5 +47,4 @@ view_all_palettes <- function(type = "all",
       par(mfrow = c(1, 1))
     }
   }
-  
 }
