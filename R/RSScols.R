@@ -57,6 +57,6 @@ RSScols <- function(palette,
                 discrete = discrete
   )
 
-  structure(out, class = "palette_choice", palette = palette)
+  structure(out, class = "palette", palette = palette)
 
 }
