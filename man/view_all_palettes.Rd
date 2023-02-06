@@ -4,11 +4,24 @@
 \alias{view_all_palettes}
 \title{Prints all available colour palettes}
 \usage{
-view_all_palettes()
+view_all_palettes(type = "all", colourblind_friendly = FALSE)
+}
+\arguments{
+\item{type}{Type of colour palettes to view. Either all palettes, sequential palettes,
+diverging palettes, or qualitative palettes. Types must be at least one of c("all", "seq", "div", "qual").
+Default "all".}
+
+\item{colourblind_friendly}{Boolean whether or not to return only colourblind friendly
+palettes. Default \code{FALSE}.}
 }
 \value{
 A plot of all colour palettes available in the package.
 }
 \description{
 Prints all available colour palettes
+}
+\examples{
+view_all_palettes(type = "seq")
+view_all_palettes(type = c("seq", "div"))
+view_all_palettes(type = "div", colourblind_friendly = TRUE)
 }
