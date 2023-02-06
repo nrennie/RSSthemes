@@ -23,6 +23,7 @@ theme_significance <- function(main_font = "sans",
                                 size = 16,
                                 hjust = hjust,
                                 colour = text_col),
+      plot.title.position = "plot",
       # subtitle
       plot.subtitle = ggplot2::element_text(family = main_font,
                                 size = 14,
