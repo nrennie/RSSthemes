@@ -12,16 +12,15 @@
 #' @export
 
 RSScols <- function(palette,
-                       n,
-                       type = "discrete",
-                       direction = 1) {
-
+                    n,
+                    type = "discrete",
+                    direction = 1) {
   `%notin%` <- Negate(`%in%`)
 
   palette_choice <- RSSPalettes[[palette]]
 
   if (is.null(palette_choice) || is.numeric(palette)) {
-    stop("Palette palette does not exist. Use palettes(RSSPalettes) to find valid palette_choice palette.")
+    stop("Palette does not exist. Use names(RSSPalettes) to find valid palette.")
   }
 
   if (missing(n)) {
@@ -42,21 +41,20 @@ RSScols <- function(palette,
 
   continuous <- if (direction == 1) {
     grDevices::colorRampPalette(palette_choice[[1]])(n)
-    } else {
-      grDevices::colorRampPalette(rev(palette_choice[[1]]))(n)
-      }
+  } else {
+    grDevices::colorRampPalette(rev(palette_choice[[1]]))(n)
+  }
 
   discrete <- if (direction == 1) {
     palette_choice[[1]][1:n]
-    } else {
-      rev(palette_choice[[1]])[1:n]
-      }
+  } else {
+    rev(palette_choice[[1]])[1:n]
+  }
 
   out <- switch(type,
-                continuous = continuous,
-                discrete = discrete
+    continuous = continuous,
+    discrete = discrete
   )
 
   structure(out, class = "palette", palette = palette)
-
 }
