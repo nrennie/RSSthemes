@@ -1,6 +1,6 @@
 Package: RSSthemes
 Title: RSS palettes and themes
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: c(
     person(given = "Nicola", family = "Rennie", role = c("aut", "cre"), email = "nrennie35@gmail.com"),
     person("Royal Statistical Society", role = c("fnd")))
@@ -14,7 +14,9 @@ Imports:
   ggplot2,
   graphics,
   grDevices, 
-  purrr
+  purrr,
+  showtext,
+  sysfonts
 Suggests:
   covr,
   knitr,
