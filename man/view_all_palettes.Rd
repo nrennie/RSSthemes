@@ -4,11 +4,7 @@
 \alias{view_all_palettes}
 \title{Prints all available colour palettes}
 \usage{
-view_all_palettes(colourblind_friendly = FALSE)
-}
-\arguments{
-\item{colourblind_friendly}{Boolean whether or not to return only colourblind friendly
-palettes. Default \code{FALSE}.}
+view_all_palettes()
 }
 \value{
 A plot of all colour palettes available in the package.
@@ -18,5 +14,4 @@ Prints all available colour palettes
 }
 \examples{
 view_all_palettes()
-view_all_palettes(colourblind_friendly = TRUE)
 }

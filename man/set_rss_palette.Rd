@@ -4,7 +4,7 @@
 \alias{set_rss_palette}
 \title{Set RSS base R plotting palette}
 \usage{
-set_rss_palette(palette, ...)
+set_rss_palette(palette)
 }
 \arguments{
 \item{palette}{Name of palette. See \code{names(RSSthemes::RSSPalettes)}.}
