@@ -116,6 +116,17 @@ ggplot(data = plot_df,
 
 ![](man/figures/div-bars-grad.png)
 
+## Using palettes with base R
+
+You can use the `set_rss_palette()` function to change the default colours used in base R plotting:
+
+```r
+set_rss_palette("signif_qual")
+plot(1:4, 1:4, col=1:4, pch=19, cex=3, xlab="", ylab="")
+```
+
+![](man/figures/qual-base.png)
+
 # Theme functions
 
 Theme functions style the non-data elements of plots, e.g. fonts, text colour, or background colour.
