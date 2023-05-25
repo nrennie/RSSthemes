@@ -1,69 +1,139 @@
 R package for styling graphics for RSS publications.
 
+The package is currently available on []() and you can install it with:
+
+```r
+remotes::install_github("nrennie/RSSthemes")
 ```
+
+You can then load the package using:
+
+```r
 library(RSSthemes)
 ```
 
 # Colour palettes
 
+There are currently three palettes available in {RSSthemes}, although we hope to add more in the future. 
+
 ## Using palettes with {ggplot2}
 
 Let’s set up a basic data set.
 
-```
+```r
 library(ggplot2)
-plot_df <- data.frame(x = LETTERS[1:3],
-                      y = 1:3)
+plot_df <- data.frame(x = LETTERS[1:4],
+                      y = 1:4)
 ```
 
-### Colouring geoms
+### Single colour charts
 
-### Discrete (fill) scale: `scale_fill_rss_d()`
+If all of the bars, lines, points, etc. should have the same colour, you can set either the `fill` or `colour` arguments to have one of the RSS colours. The options are: `signif_red`, `signif_blue`, `signif_green`, `signif_orange`, or `signif_yellow`.
 
+```r
+ggplot(data = plot_df,
+       mapping = aes(x = x, y = y)) +
+  geom_col(fill = signif_yellow)
 ```
+
+![](man/figures/yellow-bars.png)
+
+### Qualitative palettes
+
+For working with qualitative (discrete) data, the best palette to use is `"signif_qual"`. This palette currently only contains four colours.
+
+#### Discrete (fill) scale: `scale_fill_rss_d()`
+
+```r
 ggplot(data = plot_df,
        mapping = aes(x = x, y = y, fill = x)) +
   geom_col() +
   scale_fill_rss_d(palette = "signif_qual")
 ```
 
-### Discrete (colour) scale: `scale_colour_rss_d()`
+![](man/figures/qual-bars.png)
 
-```
+#### Discrete (colour) scale: `scale_colour_rss_d()`
+
+```r
 ggplot(data = plot_df,
        mapping = aes(x = x, y = y, colour = x)) +
   geom_point(size = 4) +
   scale_colour_rss_d(palette = "signif_qual")
 ```
 
-### Continuous (fill) scale: `scale_fill_rss_c()`
+![](man/figures/qual-points.png)
 
-```
+### Sequential palettes
+
+For working with sequential (continuous) data, the best palette to use is `"signif_seq"`.
+
+#### Continuous (fill) scale: `scale_fill_rss_c()`
+
+```r
 ggplot(data = plot_df,
        mapping = aes(x = x, y = y, fill = y)) +
   geom_col() +
   scale_fill_rss_c(palette = "signif_seq")
 ```
 
-### Continuous (colour) scale: `scale_colour_rss_c()`
+![](man/figures/seq-bars.png)
 
-```
+#### Continuous (colour) scale: `scale_colour_rss_c()`
+
+```r
 ggplot(data = plot_df,
        mapping = aes(x = x, y = y, colour = y)) +
   geom_point(size = 4) +
   scale_colour_rss_c(palette = "signif_seq")
 ```
 
+![](man/figures/seq-points.png)
+
+### Diverging palettes
+
+For working with diverging (continuous) data, the best palette to use is `"signif_div"`.
+
+#### Continuous (fill) scale: `scale_fill_rss_c()`
+
+```r
+ggplot(data = plot_df,
+       mapping = aes(x = x, y = y, fill = y)) +
+  geom_col() +
+  scale_fill_rss_c(palette = "signif_div")
+```
+
+![](man/figures/div-bars.png)
+
+If you want to centre the diverging scale around a different value, you can alternatively pass the pre-defined colours into `scale_fill_gradient2()` from {ggplot2}:
+
+```r
+ggplot(data = plot_df,
+       mapping = aes(x = x, y = y, fill = y)) +
+  geom_col() +
+  scale_fill_gradient2(low = signif_red, high = signif_blue, midpoint = 2)
+```
+
+![](man/figures/div-bars-grad.png)
+
 # Theme functions
+
+Theme functions style the non-data elements of plots, e.g. fonts, text colour, or background colour.
 
 ## Using themes with {ggplot2}
 
-Apply styling to non-data elements using the `theme_significance()`
+Apply styling to plots made with {ggplot2} using the `theme_significance()`
 function:
 
-```
+```r
 ggplot(data = plot_df,
        mapping = aes(x = x, y = y, fill = x)) +
   geom_col() +
+  labs(title = "My Significance Plot",
+       subtitle = "Some longer sentence explaining what is happening in the chart.",
+       caption = "Source: name of data source") +
+  scale_fill_rss_d(palette = "signif_qual") +
   theme_significance()
 ```
+
+![](man/figures/theme.png)
