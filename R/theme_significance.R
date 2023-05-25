@@ -11,7 +11,7 @@
 #' @export
 
 theme_significance <- function(family = "Source Sans Pro",
-                               base_size = 12,
+                               base_size = 13,
                                hjust = 0,
                                text_col = "black",
                                bg_col = "white") {
@@ -30,13 +30,15 @@ theme_significance <- function(family = "Source Sans Pro",
       # subtitle
       plot.subtitle = ggplot2::element_text(
         hjust = hjust,
-        colour = text_col
+        colour = text_col,
+        margin = ggplot2::margin(b = 10)
       ),
       # caption
       plot.caption = ggplot2::element_text(
         hjust = hjust,
         colour = text_col
       ),
+      plot.caption.position = "plot",
       # axis
       axis.title = ggplot2::element_text(
         colour = text_col
