@@ -1,6 +1,6 @@
 R package for styling graphics for RSS publications.
 
-The package is currently available on []() and you can install it with:
+The package is currently available on [GitHub](https://github.com/nrennie/RSSthemes) and you can install it with:
 
 ```r
 remotes::install_github("nrennie/RSSthemes")
