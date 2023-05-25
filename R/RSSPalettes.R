@@ -1,24 +1,36 @@
 #' Complete list of palettes.
 #'
-#' Use names(RSSPalettes) to return all palette names.
+#' Use \code{names(RSSPalettes)} to return all palette names.
 #'
 #' @export
 RSSPalettes <- list(
-  signif_seq = list(c("#2F0907", "#5F120E", "#8E1B15",
-                      "#BE241C", "#EE2E24", "#F1574F",
-                      "#F4817B", "#F8ABA7", "#FBD5D3"),
-                    "seq",
-                    FALSE),
-  signif_div = list(c("#EE2E24", "#F1645D", "#F49A96",
-                      "#F7D1CF", "#FaFaFa", "#C8D4E1",
-                      "#85A1C1", "#426FA0", "#003D80"),
-                    "div",
-                    FALSE),
-  signif_qual = list(c("#EE2E24", "#FaFaFa", "#003D80"),
-                     "qual",
-                     TRUE)
+  signif_seq = list(c("#163B13", "#20551B", "#2A7024",
+                      "#348A2C", "#3FA535", "#5DB355",
+                      "#7CC175", "#9BD095", "#B9DEB6")),
+  
+  signif_div = list(c("#E41B12", "#EB5751", "#F29490",
+                      "#F9D1CF", "#FFFFFF", "#CCEBF3",
+                      "#88D0E3", "#43B6D3", "#009CC4")),
+  
+  signif_qual = list(c("#3fa535", "#f4c100", "#009cc4", "#f07d00"))
   )
 
 #' Significance red hex colour
 #' @export
-signif_red <- "#EE2E24"
+signif_red <- "#e41b12"
+
+#' Significance yellow hex colour
+#' @export
+signif_yellow <- "#f4c100"
+
+#' Significance blue hex colour
+#' @export
+signif_blue <- "#009cc4"
+
+#' Significance orange hex colour
+#' @export
+signif_orange <- "#f07d00"
+
+#' Significance green hex colour
+#' @export
+signif_green <- "#3fa535"
