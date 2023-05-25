@@ -118,6 +118,14 @@ ggplot(data = plot_df,
 
 ## Using palettes with base R
 
+If all of the bars, lines, points, etc. should have the same colour, you can set `col` arguments to have one of the RSS colours. The options are: `signif_red`, `signif_blue`, `signif_green`, `signif_orange`, or `signif_yellow`.
+
+```r
+barplot(table(mtcars$gear), col = signif_blue)
+```
+
+![](man/figures/blue-base.png)
+
 You can use the `set_rss_palette()` function to change the default colours used in base R plotting:
 
 ```r
@@ -126,6 +134,8 @@ plot(1:4, 1:4, col=1:4, pch=19, cex=3, xlab="", ylab="")
 ```
 
 ![](man/figures/qual-base.png)
+
+Run `palette("default")` to reset to original base R colours.
 
 # Theme functions
 
@@ -148,3 +158,18 @@ ggplot(data = plot_df,
 ```
 
 ![](man/figures/theme.png)
+
+## Using themes with base R
+
+Apply styling to plots made with base R using the `set_signif_par()`
+function. We also recommend adding reference lines using the `abline()` function:
+
+```r
+set_signif_par()
+plot(1:4, 1:4, col=1:4, pch=19, cex=3, xlab="", ylab="",
+     main = "My Significance Plot",
+     sub = "Source: data source")
+abline(h=1:4, v=1:4, col = "lightgrey")
+```
+
+![](man/figures/theme-base.png)
