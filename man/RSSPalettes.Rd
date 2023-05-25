@@ -11,6 +11,6 @@ An object of class \code{list} of length 3.
 RSSPalettes
 }
 \description{
-Use names(RSSPalettes) to return all palette names.
+Use \code{names(RSSPalettes)} to return all palette names.
 }
 \keyword{datasets}

@@ -5,17 +5,17 @@
 \title{Significance theme}
 \usage{
 theme_significance(
-  main_font = "sans",
-  title_font = "sans",
+  family = "Source Sans Pro",
+  base_size = 13,
   hjust = 0,
   text_col = "black",
   bg_col = "white"
 )
 }
 \arguments{
-\item{main_font}{Font used for all text elements except the title. Default "sans".}
+\item{family}{Font used for all text elements. Default "Source Sans Pro".}
 
-\item{title_font}{Font used for the title. Default "sans".}
+\item{base_size}{Base font size for text elements. Default 12.}
 
 \item{hjust}{Horizontal alignment of title, subtitle, and caption. Default 0.}
 
