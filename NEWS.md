@@ -1,4 +1,4 @@
-## RSSthemes 0.0.0.9000+ 2023_05_25
+## RSSthemes 0.0.0.9000+ 2023_07_20
 
 * Add scale functions for use with {ggplot2}
 * Add basic palette outline
@@ -7,3 +7,4 @@
 * Add base R graphics settings
 * Add Source Sans Pro font
 * Load fonts on package load
+* Add code of conduct
