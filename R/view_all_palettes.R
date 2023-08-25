@@ -9,7 +9,7 @@ view_all_palettes <- function() {
   n_all <- length(to_print)
   n_col <- min(4, floor(sqrt(n_all)))
   n_row <- ceiling(n_all / n_col)
-  par(mfrow = c(n_row, n_col))
+  graphics::par(mfrow = c(n_row, n_col))
   purrr::map(.x = names(to_print), .f = ~ print(RSScols(.x)))
-  par(mfrow = c(1, 1))
+  graphics::par(mfrow = c(1, 1))
 }
