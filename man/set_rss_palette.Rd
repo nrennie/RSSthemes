@@ -9,6 +9,13 @@ set_rss_palette(palette)
 \arguments{
 \item{palette}{Name of palette. See \code{names(RSSthemes::RSSPalettes)}.}
 }
+\value{
+Returns a character vector giving the colors from the palette which
+was in effect. This is invisible unless the argument is omitted.
+}
 \description{
 Set RSS base R plotting palette
+}
+\examples{
+set_rss_palette("signif_qual")
 }

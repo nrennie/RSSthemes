@@ -20,3 +20,9 @@ A ggproto object defining a continuous colour scale for use with ggplot2.
 \description{
 Plotting with RSS palettes for fill with ggplot2
 }
+\examples{
+library(ggplot2)
+ggplot(data=mtcars, aes(x=cyl, y=disp, fill=cyl)) +
+  geom_col() +
+  scale_fill_rss_c(palette = "signif_seq")
+}

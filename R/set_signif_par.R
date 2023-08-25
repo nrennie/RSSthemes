@@ -5,6 +5,9 @@
 #' @param mar Margins. Default \code{c(5, 3, 3, 2.5)}.
 #' @param bty Axis lines. Default "n".
 #' @param ... Additional arguments passed to \code{par}
+#' @return Returns an invisible named list.
+#' @examples
+#' set_signif_par()
 #' @export
 
 set_signif_par <- function(family = "Source Sans Pro",

@@ -4,6 +4,11 @@
 #' palette_choice color order is reversed
 #' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_fill_gradientn}}
 #' @return A ggproto object defining a continuous colour scale for use with ggplot2.
+#' @examples
+#' library(ggplot2)
+#' ggplot(data = mtcars, aes(x = cyl, y = disp, fill = cyl)) +
+#'   geom_col() +
+#'   scale_fill_rss_c(palette = "signif_seq")
 #' @export
 
 scale_fill_rss_c <- function(palette, direction = 1, ...) {
@@ -14,8 +19,7 @@ scale_fill_rss_c <- function(palette, direction = 1, ...) {
   }
   if (direction %notin% c(1, -1)) {
     stop("Direction not valid. Please use 1 for standard palette_choice or -1 for reversed palette_choice.")
-  }
-  else {
+  } else {
     ggplot2::scale_fill_gradientn(colors = RSScols(palette = palette, direction = direction), ...)
   }
 }

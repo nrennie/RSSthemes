@@ -1,6 +1,10 @@
 #' Set RSS base R plotting palette
 #'
 #' @param palette Name of palette. See \code{names(RSSthemes::RSSPalettes)}.
+#' @return Returns a character vector giving the colors from the palette which
+#' was in effect. This is invisible unless the argument is omitted.
+#' @examples
+#' set_rss_palette("signif_qual")
 #' @export
 
 set_rss_palette <- function(palette) {

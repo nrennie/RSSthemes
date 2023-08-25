@@ -29,3 +29,9 @@ A ggplot2 theme
 \description{
 Custom ggplot theme
 }
+\examples{
+library(ggplot2)
+ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
+  geom_point() +
+  theme_significance()
+}

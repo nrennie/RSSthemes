@@ -20,3 +20,9 @@ A ggproto object defining a discrete colour scale for use with ggplot2.
 \description{
 Plotting with RSS palettes for colour ggplot2
 }
+\examples{
+library(ggplot2)
+ggplot(data=mtcars, aes(x=mpg, y=disp, color=factor(cyl))) +
+  geom_point() +
+  scale_colour_rss_d(palette = "signif_qual")
+}

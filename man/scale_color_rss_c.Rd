@@ -20,3 +20,9 @@ A ggproto object defining a continuous colour scale for use with ggplot2.
 \description{
 Plotting with RSS palettes for colour ggplot2
 }
+\examples{
+library(ggplot2)
+ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
+  geom_point() +
+  scale_color_rss_c(palette = "signif_seq")
+}

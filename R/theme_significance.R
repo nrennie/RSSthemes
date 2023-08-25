@@ -8,6 +8,11 @@
 #' @param text_col Text colour. Default "black".
 #' @param bg_col Background colour. Default "white".
 #' @return A ggplot2 theme
+#' @examples
+#' library(ggplot2)
+#' ggplot(data = mtcars, aes(x = mpg, y = disp, color = wt)) +
+#'   geom_point() +
+#'   theme_significance()
 #' @export
 
 theme_significance <- function(family = "Source Sans Pro",

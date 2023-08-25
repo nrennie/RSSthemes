@@ -23,6 +23,12 @@ set_signif_par(
 
 \item{...}{Additional arguments passed to \code{par}}
 }
+\value{
+Returns an invisible named list.
+}
 \description{
 Set Significance base R graphical parameters
+}
+\examples{
+set_signif_par()
 }
