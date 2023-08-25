@@ -1,9 +1,10 @@
-# Function for printing palette
-#' @importFrom grDevices rgb
-#' @importFrom graphics rect par image text
+#' Function for printing palette
+#' @param x the object to be printed.
+#' @param ... further arguments to be passed to or from other methods. 
+#' They are ignored in this function.
+#' @return A plot of the specified colour palette.
 #' @examples
 #' print(RSScols("signif_qual"))
-#' @return A plot of the specified colour palette.
 #' @export
 
 print.palette <- function(x, ...) {

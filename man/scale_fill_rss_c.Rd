@@ -22,7 +22,7 @@ Plotting with RSS palettes for fill with ggplot2
 }
 \examples{
 library(ggplot2)
-ggplot(data=mtcars, aes(x=cyl, y=disp, fill=cyl)) +
+ggplot(data = mtcars, aes(x = cyl, y = disp, fill = cyl)) +
   geom_col() +
   scale_fill_rss_c(palette = "signif_seq")
 }

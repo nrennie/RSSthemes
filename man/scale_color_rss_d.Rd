@@ -22,7 +22,7 @@ Plotting with RSS palettes for colour ggplot2
 }
 \examples{
 library(ggplot2)
-ggplot(data=mtcars, aes(x=mpg, y=disp, color=factor(cyl))) +
+ggplot(data = mtcars, aes(x = mpg, y = disp, color = factor(cyl))) +
   geom_point() +
   scale_color_rss_d(palette = "signif_qual")
 }
