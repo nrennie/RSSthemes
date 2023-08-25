@@ -1,4 +1,4 @@
-## RSSthemes 0.0.0.9000+ 2023_07_20
+## RSSthemes 1.0.0
 
 * Add scale functions for use with {ggplot2}
 * Add basic palette outline
