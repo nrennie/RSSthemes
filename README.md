@@ -2,7 +2,7 @@
   [![R-CMD-check](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-# {RSSthemes}
+# {RSSthemes} <img src="man/figures/logo.png" align="right" width="120" />
 
 {RSSthemes} is an R package for styling graphics for RSS publications. This package accompanies the *Best Practices for Data Visualisation* guidance, published by the Royal Statistical Society, which can be found at [royal-statistical-society.github.io/datavisguide](https://royal-statistical-society.github.io/datavisguide/). 
 
