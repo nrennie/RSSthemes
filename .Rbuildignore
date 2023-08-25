@@ -8,3 +8,4 @@ README.Rmd
 README_files/
 CODE_OF_CONDUCT.md
 ^cran-comments\.md$
+^CRAN-SUBMISSION$
