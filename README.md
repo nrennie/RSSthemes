@@ -1,3 +1,7 @@
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 # {RSSthemes}
 
 {RSSthemes} is an R package for styling graphics for RSS publications. This package accompanies the *Best Practices for Data Visualisation* guidance, published by the Royal Statistical Society, which can be found at [royal-statistical-society.github.io/datavisguide](https://royal-statistical-society.github.io/datavisguide/). 
@@ -8,7 +12,13 @@ This package, the data visualisation guidance site and its content are under dev
 
 A brief overview of the package is given below. For a more in-depth discussion of this R package please see [royal-statistical-society.github.io/datavisguide/docs/tools.html](https://royal-statistical-society.github.io/datavisguide/docs/tools.html) for the most up-to-date information.
 
-The package is currently available on [GitHub](https://github.com/nrennie/RSSthemes) and you can install it with:
+You can install the package from CRAN using:
+
+```r
+install.packages("RSSthemes")
+```
+
+You can install the development version from [GitHub](https://github.com/nrennie/RSSthemes) with:
 
 ```r
 remotes::install_github("nrennie/RSSthemes")
