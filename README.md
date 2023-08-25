@@ -222,7 +222,8 @@ Proposals for new features will be reviewed by the lead author team ("lead autho
 
 Lead authors may offer feedback or suggestions to contributors before agreeing to merge pull requests. Lead authors reserve the right to refuse to merge pull requests, and the decision of the lead authors is final.
 
-Use of, and all contributions to, our website and repository are governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
+Use of, and all contributions to, our website and repository are governed by our [Code of Conduct](https://github.com/nrennie/RSSthemes/blob/main/CODE_OF_CONDUCT.md).
 
 This package is licensed under a [Creative Commons Attribution 4.0 (CC BY 4.0) International licence](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1), meaning it can be used and adapted for any purpose, provided attribution is given to the original authors. By contributing to this guide, contributors agree to licence their work under the same terms.
 
+This package stores and loads *Source Sans Pro* fonts for use in the theme functions. Source Sans Pro font was developed by Paul D. Hunt, and more information can be found at [fonts.adobe.com/fonts/source-sans](https://fonts.adobe.com/fonts/source-sans). These fonts have the following copyright: Copyright 2010, 2012, 2014 Adobe Systems Incorporated [http://www.adobe.com/](http://www.adobe.com/), with Reserved Font Name ‘Source’. The fonts are licensed under the SIL Open Font License, Version 1.1. See: [http://scripts.sil.org/OFL](http://scripts.sil.org/OFL).
