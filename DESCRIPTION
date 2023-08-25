@@ -24,3 +24,5 @@ Suggests:
   rmarkdown,
   testthat (>= 3.0.0)
 License: CC BY 4.0
+URL: https://github.com/nrennie/RSSthemes
+BugReports: https://github.com/nrennie/RSSthemes/issues
