@@ -1,6 +1,6 @@
 #' Function for printing palette
 #' @param x the object to be printed.
-#' @param ... further arguments to be passed to or from other methods. 
+#' @param ... further arguments to be passed to or from other methods.
 #' They are ignored in this function.
 #' @return A plot of the specified colour palette.
 #' @examples
