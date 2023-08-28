@@ -5,8 +5,8 @@
 #' @return A plot of all colour palettes available in the package.
 #' @export
 view_all_palettes <- function() {
-  oldpar <- par(no.readonly = TRUE)
-  on.exit(par(oldpar))
+  oldpar <- graphics::par(no.readonly = TRUE)
+  on.exit(graphics::par(oldpar))
   to_print <- RSSPalettes
   n_all <- length(to_print)
   n_col <- min(4, floor(sqrt(n_all)))
