@@ -6,7 +6,8 @@ Authors@R: c(
     person("Royal Statistical Society", role = c("fnd", "cph")))
 Description: Defines colour palettes and themes for Royal Statistical 
   Society (RSS) publications, including Significance magazine. Palettes and 
-  themes are supported in both base R and ggplot2 graphics.
+  themes are supported in both base R and ggplot2 graphics, and are intended 
+  to be used by authors submitting to RSS publications.
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
