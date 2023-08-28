@@ -13,5 +13,4 @@ view_all_palettes <- function() {
   n_row <- ceiling(n_all / n_col)
   graphics::par(mfrow = c(n_row, n_col))
   purrr::map(.x = names(to_print), .f = ~ print(RSScols(.x)))
-  graphics::par(mfrow = c(1, 1))
 }
