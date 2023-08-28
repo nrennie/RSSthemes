@@ -30,5 +30,9 @@ Returns an invisible named list.
 Set Significance base R graphical parameters
 }
 \examples{
+# save user's current par values that this function will change
+oldpar <- par("family", "adj", "mar", "bty")
 set_signif_par()
+plot(1:4, 1:4, col=1:4, main = "Title")
+par(oldpar)
 }
