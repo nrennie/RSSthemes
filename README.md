@@ -1,5 +1,6 @@
 <!-- badges: start -->
   [![R-CMD-check](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nrennie/RSSthemes/actions/workflows/R-CMD-check.yaml)
+  [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/RSSthemes)](https://cran.r-project.org/package=RSSthemes)
 <!-- badges: end -->
 
 # {RSSthemes} <img src="man/figures/logo.png" align="right" width="120" />
