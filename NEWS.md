@@ -1,3 +1,7 @@
+## RSSthemes 1.0.0.9000
+
+* Set to dev version and add CRAN badge
+
 ## RSSthemes 1.0.0
 
 * Add scale functions for use with {ggplot2}
