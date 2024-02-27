@@ -1,6 +1,7 @@
-## RSSthemes 1.0.0.9000
+## RSSthemes 1.0.0.9000+
 
-* Set to dev version and add CRAN badge
+* Add CRAN badge
+* Add citation file
 
 ## RSSthemes 1.0.0
 
