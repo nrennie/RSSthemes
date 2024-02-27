@@ -6,6 +6,7 @@
 ^LICENSE\.md$
 README.Rmd
 README_files/
+codecov.yml
 CODE_OF_CONDUCT.md
 ^cran-comments\.md$
 ^CRAN-SUBMISSION$
