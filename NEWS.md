@@ -2,6 +2,7 @@
 
 * Add CRAN badge
 * Add citation file
+* Add unit tests
 
 ## RSSthemes 1.0.0
 

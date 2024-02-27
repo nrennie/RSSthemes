@@ -1,0 +1,37 @@
+test_that("scales functions works", {
+  fill_scale <- scale_fill_rss_c(palette = "signif_seq")
+  expect_equal(fill_scale$is_discrete(), FALSE)
+  expect_error(scale_fill_rss_c(palette = "signif_sequential"))
+  expect_error(scale_fill_rss_c(palette = "signif_seq", direction = 0))
+
+  fill_scale <- scale_fill_rss_d(palette = "signif_qual")
+  expect_equal(fill_scale$is_discrete(), TRUE)
+  fill_scale <- scale_fill_rss_d(palette = "signif_qual", direction = -1)
+  expect_equal(fill_scale$is_discrete(), TRUE)
+  expect_error(scale_fill_rss_d(palette = "signif_qualit"))
+  expect_error(scale_fill_rss_d(palette = "signif_qual", direction = 0))
+
+  colour_scale <- scale_colour_rss_c(palette = "signif_seq")
+  expect_equal(colour_scale$is_discrete(), FALSE)
+  expect_error(scale_colour_rss_c(palette = "signif_sequential"))
+  expect_error(scale_colour_rss_c(palette = "signif_seq", direction = 0))
+
+  colour_scale <- scale_color_rss_c(palette = "signif_seq")
+  expect_equal(colour_scale$is_discrete(), FALSE)
+  expect_error(scale_color_rss_c(palette = "signif_sequential"))
+  expect_error(scale_color_rss_c(palette = "signif_seq", direction = 0))
+
+  colour_scale <- scale_colour_rss_d(palette = "signif_qual")
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  colour_scale <- scale_colour_rss_d(palette = "signif_qual", direction = -1)
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  expect_error(scale_colour_rss_d(palette = "signif_qualit"))
+  expect_error(scale_colour_rss_d(palette = "signif_qual", direction = 0))
+
+  colour_scale <- scale_color_rss_d(palette = "signif_qual")
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  colour_scale <- scale_color_rss_d(palette = "signif_qual", direction = -1)
+  expect_equal(colour_scale$is_discrete(), TRUE)
+  expect_error(scale_color_rss_d(palette = "signif_qualit"))
+  expect_error(scale_color_rss_d(palette = "signif_qual", direction = 0))
+})
