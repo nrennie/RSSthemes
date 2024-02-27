@@ -1,0 +1,18 @@
+bibentry(
+  bibtype  = "Misc",
+  title    = "Best Practices for Data Visualisation.",
+  author   = "Andreas Krause and Nicola Rennie and Brian Tarran",
+  publisher  = "Royal Statistical Society",
+  year     = "2023",
+  doi      = "10.5281/zenodo.10600718",
+  url      = "https://royal-statistical-society.github.io/datavisguide/"
+)
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "RSSthemes: RSS Palettes and Themes.",
+  author   = "Nicola Rennie",
+  year     = "2023",
+  note     = "R package version 1.0.0",
+  url      = "https://cran.r-project.org/package=RSSthemes"
+)
