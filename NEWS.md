@@ -3,6 +3,8 @@
 * Add CRAN badge
 * Add citation file
 * Add unit tests
+* Add more sequential colour palettes
+* Define palette orders and types
 
 ## RSSthemes 1.0.0
 
